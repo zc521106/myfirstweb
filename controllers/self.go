@@ -1,7 +1,7 @@
 package controllers
 
 type SelfController struct {
-	MainController
+	BaseController
 }
 
 //func (c *CMSController) URLMapping() {

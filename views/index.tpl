@@ -80,6 +80,16 @@
       Beego is a simple & powerful Go web framework which is inspired by tornado and sinatra.
     </div>
   </header>
+	<form id="user" action="/user/regist" method="post">
+	    名字：<input name="username" type="text" />
+	    密码：<input name="password" type="text" />
+	    手机：<input name="phonenum" type="text" />
+	    <input type="submit" value="提交" />
+	</form>
+	<form action="/file/upload" enctype="multipart/form-data" method="post">
+	    <input type="file" name="uploadfilename" />
+	    <input type="submit" value="上传">
+	</form>
   <footer>
     <div class="author">
       Official website:

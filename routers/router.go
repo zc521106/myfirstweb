@@ -3,11 +3,15 @@ package routers
 import (
 	"myfirstweb/controllers"
 
+	"log"
+
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/context"
 )
 
 func init() {
+
+	beego.Router("/", &controllers.BaseController{})
 
 	beego.Router("/index", &controllers.MainController{})
 	//	beego.Router("/auto1", &controllers.AutoController{})
@@ -29,7 +33,45 @@ func init() {
 	beego.Router("/getInt/:num:int", &controllers.MainController{}, "get:GetInt")
 	//download之后的链接是 文件路径  写了File方法之后会输出该方法中打印的内容到下载文件中去
 	beego.Router("/download/*.*", &controllers.MainController{}, "get:File")
+	//普通带参url取值参见：AutoController.GetInfo()方法
 
 	//注解路由 只需要 Include 相应地 controller，然后在 controller 的 method 方法上面写上 router 注释（// @router）就可以
 	beego.Include(&controllers.SelfController{})
+
+	//请求数据处理
+	beego.Router("/user/regist", &controllers.MainController{}, "post:Regist")
+
+	//上传文件
+	beego.Router("/file/upload", &controllers.MainController{}, "post:UploadFile")
+
+	//数据绑定
+	beego.Router("/data/bind", &controllers.MainController{}, "get:DataBind")
+
+	//session控制
+	beego.Router("/session/set", &controllers.MainController{}, "get:SetSessionFunc")
+	beego.Router("/session/get", &controllers.MainController{}, "get:GetSessionFunc")
+
+	//过滤器，还可以通过正则路由进行过滤，如果匹配参数就执行
+	beego.InsertFilter("/session/get", beego.BeforeRouter, WebFilter)
+
+	//表单数据验证
+	beego.Router("/student/save", &controllers.ValidController{}, "get:SaveStudent")
+	beego.Router("/teacher/save", &controllers.ValidController{}, "get:SaveTeacher")
+}
+
+var WebFilter = func(ctx *context.Context) {
+	u := ctx.Request.RequestURI //获取请求的链接 url
+	i := ctx.Request.RemoteAddr //获取请求ip地址
+	log.Println(u, i)
+	uid, ok := ctx.Input.Session("uid").(int)           //获取不到session中的值
+	id, status := ctx.Input.CruSession.Get("uid").(int) //可以获取到
+	log.Println("uid: ", uid, id, status)
+	//	log.Fatalln("uid: ", uid) //调用之后会调用os.exit(1) 接口退出程序
+	log.Println("ok: ", ok)
+	if ok {
+		log.Println(ok)
+	} else {
+		log.Println(uid)
+		//ctx.Redirect(302, "/index")
+	}
 }
