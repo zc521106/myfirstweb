@@ -52,11 +52,11 @@ func (c *ValidController) SaveStudent() {
 // 	各个函数的结果的 key 值为字段名.验证函数名
 type Teacher struct {
 	Id    int
-	Name  string `valid:"Required;Match(/^Chao.*/)" form:"name"` // Name不可为空并且必须以Chao开头
+	Name  string `form:"name" valid:"Required;Match(/^Chao.*/)"` // Name不可为空并且必须以Chao开头
 	Age   int    `form:"age" valid:"Range(0, 28)"`               // 0 <= Age <= 28
-	Email string `form:"email" valid:Email;`                     // Email需要符合邮箱格式
-	Phone string `form:"phone" valid:Mobile;MaxSize(14)`         // Phone必须为正确的手机号，且长度不能大于14
-	IP    string `form:"ip" valid:IP`                            // IP必须为一个正确的 IPv4 地址
+	Email string `form:"email" valid:"Email";`                   // Email需要符合邮箱格式
+	Phone string `form:"phone" valid:"Mobile; MaxSize(14)"`      // Phone必须为正确的手机号，且长度不能大于14
+	IP    string `form:"ip" valid:"IP"`                          // IP必须为一个正确的 IPv4 地址
 }
 
 // 如果你的 struct 实现了接口 validation.ValidFormer
@@ -74,15 +74,26 @@ func (c *ValidController) SaveTeacher() {
 	valid := validation.Validation{}
 	if err := c.ParseForm(&t); err == nil {
 		log.Println(t.Name, t.Phone)
-		if b, er := valid.Valid(&t); er == nil {
-			log.Println(b, er)
-			c.Ctx.WriteString("ok " + t.Name)
-		} else {
+		res, er := valid.Valid(&t)
+		if er != nil {
+			log.Println(res, er)
 			for _, msg := range valid.Errors {
 				log.Println(msg.Key, msg.Message)
 			}
-			c.Ctx.WriteString("error 1")
+			c.Ctx.WriteString("error0 ")
 		}
+		if !res { // res=false说明valid未通过
+			errs := make(map[string]interface{})
+			for index, msg := range valid.Errors {
+				log.Println(index, msg.Key, msg.Message)
+				errs[msg.Key] = msg.Message
+			}
+			c.Data["json"] = errs
+			c.ServeJSON()
+			// c.Ctx.WriteString("error 1 " + msg.Key + " " + msg.Message)
+			return
+		}
+		c.Ctx.Output.Body([]byte(t.Name))
 	} else {
 		c.Ctx.WriteString("error 2")
 	}

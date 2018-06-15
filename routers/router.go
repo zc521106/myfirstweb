@@ -2,6 +2,7 @@ package routers
 
 import (
 	"myfirstweb/controllers"
+	"net/http"
 
 	"log"
 
@@ -57,6 +58,31 @@ func init() {
 	//表单数据验证
 	beego.Router("/student/save", &controllers.ValidController{}, "get:SaveStudent")
 	beego.Router("/teacher/save", &controllers.ValidController{}, "get:SaveTeacher")
+
+	//错误处理
+	beego.ErrorController(&controllers.ErrorController{})
+	//	beego.ErrorHandler("404", err_404) // 这两个都可以，下面的最后注册，会默认执行
+
+	//日志处理
+	beego.SetLogger("file", "{\"filename\":\"logs/out.log\"}")
+	//这个默认情况就会同时输出到两个地方，一个 console，一个 file，如果只想输出到文件，就需要调用删除操作：
+	// beego.BeeLogger.DelLogger("console")
+	// 日志的级别如上所示的代码这样分为八个级别：
+	/*LevelEmergency
+	LevelAlert
+	LevelCritical
+	LevelError
+	LevelWarning
+	LevelNotice
+	LevelInformational
+	LevelDebug
+	级别依次降低，默认全部打印，但是一般我们在部署环境，可以通过设置级别设置日志级别：*/
+	beego.SetLevel(beego.LevelDebug)
+	//日志默认不输出调用的文件名和文件行号,如果你期望输出调用的文件名和文件行号,可以如下设置
+	beego.SetLogFuncCall(true)
+
+	//ORM 配置了自动映射
+	beego.AutoRouter(&controllers.OrmController{})
 }
 
 var WebFilter = func(ctx *context.Context) {
@@ -74,4 +100,10 @@ var WebFilter = func(ctx *context.Context) {
 		log.Println(uid)
 		//ctx.Redirect(302, "/index")
 	}
+}
+
+func err_404(rw http.ResponseWriter, req *http.Request) {
+	//	data := make(map[string]interface{})
+	data := "page not fond"
+	rw.Write([]byte(data))
 }

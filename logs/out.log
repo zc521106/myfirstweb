@@ -1,0 +1,316 @@
+2018/06/15 10:52:37.183 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 10:54:04.346 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 10:54:12.460 [D] [server.go:2694] ::1 - - [15/Jun/2018 10:54:12] "GET /teacher/save1?name=Chao11adinoq&age=11&ip=11.0.0.0&email=1111@1.c&phone=18888888882 HTTP/1.1 404 0" 0.013001  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 10:57:25.691 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 11:00:32.063 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 11:00:35.331 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:00:35] "GET /teacher/save?name=Chao11adinoq&age=11&ip=11.0.0.0&email=1111@1.c&phone=18888888882 HTTP/1.1 200 0" 0.014001  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:00:39.618 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:00:39] "GET /teacher/save?name=Chao11adinoq&age=11&ip=11&email=1111&phone=18888888882 HTTP/1.1 200 0" 0.007000  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:18:50.422 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 11:19:39.202 [D] [OrmController.go:28] succeed 
+2018/06/15 11:19:39.329 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:19:39] "GET /orm/saveuser?name=zhaochao HTTP/1.1 200 0" 0.135008  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:19:55.318 [D] [OrmController.go:28] succeed 
+2018/06/15 11:19:55.381 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:19:55] "GET /orm/saveuser?name=zhaochao1 HTTP/1.1 200 0" 0.064004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:19:58.107 [D] [OrmController.go:28] succeed 
+2018/06/15 11:19:58.168 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:19:58] "GET /orm/saveuser?name=zhaochao1 HTTP/1.1 200 0" 0.061004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:21:36.868 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 11:21:54.132 [D] [OrmController.go:28] succeed 
+2018/06/15 11:21:54.190 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:21:54] "GET /orm/saveuser?name=%E5%BE%80%E4%B8%8A%E4%B8%BE HTTP/1.1 200 0" 0.077004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:22:10.013 [D] [OrmController.go:28] succeed 
+2018/06/15 11:22:10.076 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:22:10] "GET /orm/saveuser?name=%E5%BE%80%E4%B8%8A%E4%B8%BE%C2%B7%C2%B7` HTTP/1.1 200 0" 0.062004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:43:57.070 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 11:44:10.898 [D] [OrmController.go:30] succeed 
+2018/06/15 11:44:10.960 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:44:10] "GET /orm/saveuser?name=%E8%B5%B5%E9%93%81%E9%94%A4 HTTP/1.1 200 0" 0.070004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:44:33.908 [D] [OrmController.go:52] succeed 
+2018/06/15 11:44:33.968 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:44:33] "GET /orm/updateuser?id=3&name=%E7%8E%8B%E9%92%A2%E8%9B%8B HTTP/1.1 200 0" 0.060003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:44:49.061 [D] [OrmController.go:52] succeed 
+2018/06/15 11:44:49.118 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:44:49] "GET /orm/updateuser?id=8&name=%E7%8E%8B%E9%92%A2%E8%9B%8B HTTP/1.1 200 0" 0.058003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:45:21.810 [D] [OrmController.go:76] succeed 
+2018/06/15 11:45:21.867 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:45:21] "GET /orm/queryuser?id=6 HTTP/1.1 200 0" 0.057003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:45:46.614 [D] [OrmController.go:100] succeed 
+2018/06/15 11:45:46.674 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:45:46] "GET /orm/deleteuser?id=2 HTTP/1.1 200 0" 0.060003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 11:45:54.977 [D] [OrmController.go:100] succeed 
+2018/06/15 11:45:55.036 [D] [server.go:2694] ::1 - - [15/Jun/2018 11:45:54] "GET /orm/deleteuser?id=2 HTTP/1.1 200 0" 0.062004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 15:55:17.564 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 15:55:24.243 [D] [OrmController.go:76] succeed 
+2018/06/15 15:55:24.298 [D] [server.go:2694] ::1 - - [15/Jun/2018 03:55:24] "GET /orm/queryuser?id=6 HTTP/1.1 200 0" 0.065004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 15:55:31.110 [D] [OrmController.go:30] succeed 
+2018/06/15 15:55:31.170 [D] [server.go:2694] ::1 - - [15/Jun/2018 03:55:31] "GET /orm/saveuser?name=%E8%B5%B5%E9%93%81%E9%94%A4221 HTTP/1.1 200 0" 0.062004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 15:55:50.968 [D] [OrmController.go:30] succeed 
+2018/06/15 15:55:51.027 [D] [server.go:2694] ::1 - - [15/Jun/2018 03:55:50] "GET /orm/saveuser?name=%E9%93%81%E9%94%A4%E5%A6%B9%E5%A6%B9 HTTP/1.1 200 0" 0.059003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:05:23.094 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:05:31.985 [D] [OrmController.go:150] 3 
+2018/06/15 16:05:31.985 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:05:31] "GET /orm/queryusers HTTP/1.1 200 0" 0.067004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:09:34.673 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:09:55.486 [D] [OrmController.go:150] 3 
+2018/06/15 16:09:55.486 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:09:55] "GET /orm/queryusers HTTP/1.1 200 0" 0.075004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:10:04.171 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:10:04] "GET /orm/queryuserbyid?id=3 HTTP/1.1 200 0" 0.061004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:10:07.017 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:10:06] "GET /orm/queryuserbyid?id=2 HTTP/1.1 200 0" 0.090005  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:10:35.960 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:10:44.772 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:10:44] "GET /orm/queryuserbyid?id=2 HTTP/1.1 200 0" 0.065004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:10:47.158 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:10:47] "GET /orm/queryuserbyid?id=2 HTTP/1.1 200 0" 0.061004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:11:20.758 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:11:24.453 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:11:24] "GET /orm/queryuserbyid?id=2 HTTP/1.1 200 0" 0.070004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:11:27.000 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:11:26] "GET /orm/queryuserbyid?id=2 HTTP/1.1 200 0" 0.059003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:18:22.061 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:18:21] "GET /orm/queryuserbyid?id=2 HTTP/1.1 200 0" 0.062004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:18:25.015 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:18:24] "GET /orm/queryuserbyid?id=9 HTTP/1.1 200 0" 0.060004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:18:27.325 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:18:27] "GET /orm/queryuserbyid?id=8 HTTP/1.1 200 0" 0.063004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:23:56.339 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:23:58.786 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:23:58] "GET /orm/queryuserbyid?id=8 HTTP/1.1 200 0" 0.073004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:24:17.814 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:24:17] "GET /orm/updateuserbyid?id=8&name=%E9%93%81%E9%94%A4%E5%A6%B9%E5%A6%B9 HTTP/1.1 404 0" 0.009000  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:24:41.028 [C] [asm_amd64.s:573] the request url is  /orm/updateusernamebyid
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] Handler crashed with error strconv: illegal AppendInt/FormatInt base
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/panic.go:502
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] d:/install/Go_env/src/strconv/itoa.go:98
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] d:/install/Go_env/src/strconv/itoa.go:27
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/myfirstweb/controllers/OrmController.go:178
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:447
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:308
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:847
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:2694
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:1830
+2018/06/15 16:24:41.029 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:2361
+2018/06/15 16:26:06.972 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:26:15.616 [C] [asm_amd64.s:573] the request url is  /orm/updateusernamebyid
+2018/06/15 16:26:15.616 [C] [asm_amd64.s:573] Handler crashed with error strconv: illegal AppendInt/FormatInt base
+2018/06/15 16:26:15.616 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 16:26:15.616 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/panic.go:502
+2018/06/15 16:26:15.616 [C] [asm_amd64.s:573] d:/install/Go_env/src/strconv/itoa.go:98
+2018/06/15 16:26:15.616 [C] [asm_amd64.s:573] d:/install/Go_env/src/strconv/itoa.go:27
+2018/06/15 16:26:15.616 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/myfirstweb/controllers/OrmController.go:178
+2018/06/15 16:26:15.617 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 16:26:15.617 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:447
+2018/06/15 16:26:15.617 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:308
+2018/06/15 16:26:15.617 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:847
+2018/06/15 16:26:15.617 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:2694
+2018/06/15 16:26:15.617 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:1830
+2018/06/15 16:26:15.617 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:2361
+2018/06/15 16:26:26.052 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:26:47.343 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:26:47] "GET /orm/queryuserbyid?id=8 HTTP/1.1 200 0" 0.069004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:26:52.062 [C] [asm_amd64.s:573] the request url is  /orm/updateusernamebyid
+2018/06/15 16:26:52.062 [C] [asm_amd64.s:573] Handler crashed with error strconv: illegal AppendInt/FormatInt base
+2018/06/15 16:26:52.062 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/panic.go:502
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] d:/install/Go_env/src/strconv/itoa.go:98
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] d:/install/Go_env/src/strconv/itoa.go:27
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/myfirstweb/controllers/OrmController.go:178
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:447
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:308
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:847
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:2694
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:1830
+2018/06/15 16:26:52.063 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:2361
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] the request url is  /orm/updateusernamebyid
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] Handler crashed with error strconv: illegal AppendInt/FormatInt base
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/panic.go:502
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] d:/install/Go_env/src/strconv/itoa.go:98
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] d:/install/Go_env/src/strconv/itoa.go:27
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/myfirstweb/controllers/OrmController.go:178
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:447
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:308
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:847
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:2694
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:1830
+2018/06/15 16:29:17.545 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:2361
+2018/06/15 16:30:05.566 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:30:06.457 [C] [asm_amd64.s:573] the request url is  /orm/updateusernamebyid
+2018/06/15 16:30:06.458 [C] [asm_amd64.s:573] Handler crashed with error strconv: illegal AppendInt/FormatInt base
+2018/06/15 16:30:06.458 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 16:30:06.458 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/panic.go:502
+2018/06/15 16:30:06.458 [C] [asm_amd64.s:573] d:/install/Go_env/src/strconv/itoa.go:98
+2018/06/15 16:30:06.458 [C] [asm_amd64.s:573] d:/install/Go_env/src/strconv/itoa.go:27
+2018/06/15 16:30:06.458 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/myfirstweb/controllers/OrmController.go:178
+2018/06/15 16:30:06.458 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 16:30:06.459 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:447
+2018/06/15 16:30:06.459 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:308
+2018/06/15 16:30:06.459 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:847
+2018/06/15 16:30:06.459 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:2694
+2018/06/15 16:30:06.459 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:1830
+2018/06/15 16:30:06.459 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:2361
+2018/06/15 16:32:08.705 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:32:08.863 [D] [server.go:2694] 127.0.0.1 - - [15/Jun/2018 04:32:08] "GET /orm/updateusernamebyid?id=8&name=%E9%93%81%E9%94%A4%E5%A6%B9%E5%A6%B93 HTTP/1.1 200 0" 0.069004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:33:01.531 [D] [server.go:2694] 127.0.0.1 - - [15/Jun/2018 04:33:01] "GET /orm/updateusernamebyid?id=2&name=%E9%93%81%E9%94%A4%E5%A6%B9%E5%A6%B93 HTTP/1.1 200 0" 0.060004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:44:33.063 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:44:50.591 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:44:50] "GET /orm/testvalues?id=1 HTTP/1.1 200 0" 0.070004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:45:12.419 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:45:12] "GET /orm/testvalues?id=2 HTTP/1.1 200 0" 0.060004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:45:15.769 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:45:15] "GET /orm/testvalues?id=1 HTTP/1.1 200 0" 0.061004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:48:53.214 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 16:48:58.355 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:48:58] "GET /orm/testvalues?id=1 HTTP/1.1 200 0" 0.069004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:49:06.922 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:49:06] "GET /orm/testvalueslist?id=1 HTTP/1.1 200 0" 0.058003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 16:49:18.021 [D] [server.go:2694] ::1 - - [15/Jun/2018 04:49:17] "GET /orm/testvaluesflat?id=1 HTTP/1.1 200 0" 0.058003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:03:03.536 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:03:07.200 [D] [OrmController.go:284] 7 
+2018/06/15 17:03:07.200 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:03:07] "GET /orm/testrowstomap?id=1 HTTP/1.1 200 0" 0.106006  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] the request url is  /orm/testrowstostruct
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] Handler crashed with error <RawSeter> RowsTo unsupport type `[]controllers.User` need ptr struct
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/panic.go:502
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/orm/orm_raw.go:697
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/orm/orm_raw.go:833
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/myfirstweb/controllers/OrmController.go:295
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:447
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:308
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:847
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:2694
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:1830
+2018/06/15 17:03:31.733 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:2361
+2018/06/15 17:04:44.753 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:04:47.228 [C] [asm_amd64.s:573] the request url is  /orm/testrowstostruct
+2018/06/15 17:04:47.228 [C] [asm_amd64.s:573] Handler crashed with error <RawSeter> RowsTo unsupport type `[]controllers.User` need ptr struct
+2018/06/15 17:04:47.228 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 17:04:47.228 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/panic.go:502
+2018/06/15 17:04:47.228 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/orm/orm_raw.go:697
+2018/06/15 17:04:47.228 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/orm/orm_raw.go:833
+2018/06/15 17:04:47.228 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/myfirstweb/controllers/OrmController.go:307
+2018/06/15 17:04:47.228 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 17:04:47.229 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:447
+2018/06/15 17:04:47.229 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:308
+2018/06/15 17:04:47.229 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:847
+2018/06/15 17:04:47.229 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:2694
+2018/06/15 17:04:47.229 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:1830
+2018/06/15 17:04:47.229 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:2361
+2018/06/15 17:05:37.553 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:05:38.998 [C] [asm_amd64.s:573] the request url is  /orm/testrowstostruct
+2018/06/15 17:05:38.998 [C] [asm_amd64.s:573] Handler crashed with error <RawSeter> RowsTo unsupport type `controllers.User` need ptr struct
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/panic.go:502
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/orm/orm_raw.go:697
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/orm/orm_raw.go:833
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/myfirstweb/controllers/OrmController.go:307
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:447
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:308
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:847
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:2694
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:1830
+2018/06/15 17:05:38.999 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:2361
+2018/06/15 17:12:05.960 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:12:08.251 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:12:08] "GET /orm/queryuserbyid?id=8 HTTP/1.1 200 0" 0.069004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:12:20.823 [D] [OrmController.go:311] 7 
+2018/06/15 17:12:20.823 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:12:20] "GET /orm/testrowstostruct?id=1 HTTP/1.1 200 0" 0.057003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:12:47.937 [D] [OrmController.go:311] 1 
+2018/06/15 17:12:47.937 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:12:47] "GET /orm/testrowstostruct?id=8 HTTP/1.1 200 0" 0.055003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:17:14.178 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] the request url is  /orm/testrowstostruct
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] Handler crashed with error <RawSeter> RowsTo unsupport type `controllers.User` need ptr struct
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/panic.go:502
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/orm/orm_raw.go:697
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/orm/orm_raw.go:833
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/myfirstweb/controllers/OrmController.go:309
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:447
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:308
+2018/06/15 17:17:14.788 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:847
+2018/06/15 17:17:14.789 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:2694
+2018/06/15 17:17:14.789 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:1830
+2018/06/15 17:17:14.789 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:2361
+2018/06/15 17:18:22.363 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:18:26.132 [D] [OrmController.go:309] 1 
+2018/06/15 17:18:26.132 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:18:26] "GET /orm/testrowstostruct?id=8 HTTP/1.1 200 0" 0.070004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:18:34.279 [D] [OrmController.go:309] 2 
+2018/06/15 17:18:34.279 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:18:34] "GET /orm/testrowstostruct?id=7 HTTP/1.1 200 0" 0.058003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:24:35.551 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:24:39.336 [D] [OrmController.go:309] 1 
+2018/06/15 17:24:39.336 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:24:39] "GET /orm/testrowstostruct?id=7 HTTP/1.1 200 0" 0.067004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:24:49.230 [D] [OrmController.go:216] 7 
+2018/06/15 17:24:49.230 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:24:49] "GET /orm/testvalues?id=1 HTTP/1.1 200 0" 0.057003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:25:19.128 [D] [OrmController.go:249] 7 
+2018/06/15 17:25:19.128 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:25:19] "GET /orm/testvalueslist?id=1 HTTP/1.1 200 0" 0.073004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:25:20.934 [D] [OrmController.go:272] 7 
+2018/06/15 17:25:20.934 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:25:20] "GET /orm/testvaluesflat?id=1 HTTP/1.1 200 0" 0.057003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:25:23.539 [D] [OrmController.go:296] 7 
+2018/06/15 17:25:23.539 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:25:23] "GET /orm/testrowstomap?id=1 HTTP/1.1 200 0" 0.058003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:25:26.429 [D] [OrmController.go:309] 1 
+2018/06/15 17:25:26.430 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:25:26] "GET /orm/testrowstostruct?id=1 HTTP/1.1 200 0" 0.057003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:26:49.056 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:26:52.785 [D] [OrmController.go:309] 1 
+2018/06/15 17:26:52.785 [D] [OrmController.go:310] &{0 } 
+2018/06/15 17:26:52.786 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:26:52] "GET /orm/testrowstostruct?id=1 HTTP/1.1 200 0" 0.072004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:27:29.933 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:27:30.725 [C] [asm_amd64.s:573] the request url is  /orm/testrowstostruct
+2018/06/15 17:27:30.725 [C] [asm_amd64.s:573] Handler crashed with error <RawSeter> RowsTo unsupport type `**controllers.User` need ptr struct
+2018/06/15 17:27:30.725 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 17:27:30.725 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/panic.go:502
+2018/06/15 17:27:30.725 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/orm/orm_raw.go:697
+2018/06/15 17:27:30.725 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/orm/orm_raw.go:833
+2018/06/15 17:27:30.726 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/myfirstweb/controllers/OrmController.go:307
+2018/06/15 17:27:30.726 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:573
+2018/06/15 17:27:30.726 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:447
+2018/06/15 17:27:30.726 [C] [asm_amd64.s:573] d:/install/Go_env/src/reflect/value.go:308
+2018/06/15 17:27:30.726 [C] [asm_amd64.s:573] C:/Users/Administrator/go/src/github.com/astaxie/beego/router.go:847
+2018/06/15 17:27:30.726 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:2694
+2018/06/15 17:27:30.726 [C] [asm_amd64.s:573] d:/install/Go_env/src/net/http/server.go:1830
+2018/06/15 17:27:30.726 [C] [asm_amd64.s:573] d:/install/Go_env/src/runtime/asm_amd64.s:2361
+2018/06/15 17:28:31.560 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:28:42.140 [D] [OrmController.go:309] 1 
+2018/06/15 17:28:42.140 [D] [OrmController.go:310] &{0 } 
+2018/06/15 17:28:42.140 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:28:42] "GET /orm/testrowstostruct?id=1 HTTP/1.1 200 0" 0.064004  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:28:52.331 [D] [OrmController.go:309] 1 
+2018/06/15 17:28:52.331 [D] [OrmController.go:310] &{0 } 
+2018/06/15 17:28:52.332 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:28:52] "GET /orm/testrowstostruct?id=1 HTTP/1.1 200 0" 0.057003  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:38:01.698 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:39:38.421 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:39:38] "GET /orm/testrowstostruct?id=1 HTTP/1.1 200 0" 0.041002  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
+2018/06/15 17:40:08.239 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2018/06/15 17:40:35.947 [D] [server.go:2694] ::1 - - [15/Jun/2018 05:40:35] "GET /orm/testrowstostruct?id=1 HTTP/1.1 200 0" 0.034002  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.3964.2 Safari/537.36
+
