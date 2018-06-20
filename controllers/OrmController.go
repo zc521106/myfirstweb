@@ -18,7 +18,6 @@ type User struct {
 }
 
 type KeyValue struct {
-	Id    int
 	Key   string
 	Value string
 }
@@ -28,7 +27,7 @@ var o orm.Ormer
 func init() {
 	orm.RegisterDataBase("default", "mysql", "root:MysqlPsw1!@tcp(39.106.15.201:3306)/go_test?charset=utf8", 30)
 	orm.RegisterModel(new(User))
-	orm.RegisterModel(new(KeyValue))
+	//	orm.RegisterModel(new(KeyValue)) //手动建表
 	orm.RunSyncdb("default", false, true)
 	o = orm.NewOrm()
 	//开启orm调试，会输出sql语句
@@ -311,9 +310,10 @@ func (c *OrmController) TestRowsToMap() {
 
 // 注意：查询到的key和value字段值分别为对象的属性及相应的属性值
 func (c *OrmController) TestRowsToStruct() {
+	//	id := c.GetString("id")
 	res := new(ResultBody)
-	id := c.GetString("id")
-	num, err := o.Raw("select key, value from key_value where id = ?", id).RowsToStruct(res, "key", "value")
+	num, err := o.Raw("select key, value from key_value").RowsToStruct(res, "key", "value")
+	beego.Debug(res.LogLevel)
 	if err == nil && num > 0 {
 		beego.Debug(num)
 		beego.Debug(res)
