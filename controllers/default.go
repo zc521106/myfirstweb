@@ -105,8 +105,14 @@ func (c *MainController) GetSessionFunc() {
 
 func (c *MainController) GetBlogInfo() {
 	url := c.GetString("url")
+	// 获取请求的方式：get、post等
 	method := c.GetString("method")
 	var req *httplib.BeegoHTTPRequest
+	// 设置超时时间
+	req.SetTimeout(10, 10)
+	// 设置参数：参数可以直接在链接地址中拼接也可以通过这种方式设置
+	//req.Param("key", "value")
+	//req.Param("key", "value")
 	if method == "get" {
 		req = httplib.Get(url)
 	} else if method == "post" {
