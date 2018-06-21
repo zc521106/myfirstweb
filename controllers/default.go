@@ -3,6 +3,8 @@ package controllers
 import (
 	"fmt"
 	"log"
+
+	"github.com/astaxie/beego/httplib"
 )
 
 type MainController struct {
@@ -98,5 +100,31 @@ func (c *MainController) GetSessionFunc() {
 		c.Ctx.WriteString(v.(string))
 	} else {
 		c.Ctx.WriteString("nil")
+	}
+}
+
+func (c *MainController) GetBlogInfo() {
+	url := c.GetString("url")
+	method := c.GetString("method")
+	var req *httplib.BeegoHTTPRequest
+	if method == "get" {
+		req = httplib.Get(url)
+	} else if method == "post" {
+		req = httplib.Post(url)
+	} else if method == "put" {
+		req = httplib.Put(url)
+	} else if method == "delete" {
+		req = httplib.Delete(url)
+	} else {
+		c.Ctx.WriteString("this method is not support!")
+		return
+	}
+	res, err := req.String()
+	if err == nil {
+		c.Ctx.WriteString(res)
+	} else {
+		log.Println(res)
+		log.Println(err)
+		c.Ctx.WriteString("error")
 	}
 }

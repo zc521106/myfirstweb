@@ -83,6 +83,9 @@ func init() {
 
 	//ORM 配置了自动映射
 	beego.AutoRouter(&controllers.OrmController{})
+
+	//httplib使用
+	beego.Router("/getBlogInfo", &controllers.MainController{}, "get:GetBlogInfo")
 }
 
 var WebFilter = func(ctx *context.Context) {
